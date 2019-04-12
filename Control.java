@@ -3,14 +3,18 @@ import java.awt.event.ActionListener;
 
 public class Control{
     //component
+    Model model;
     View theView;
     sql mySql;
     int arraySize; 
     int index = 0;
+    String filter = "All";
 
-    Control(View mView, sql mySql){
+
+    Control(View mView, sql mySql, Model model){
         this.mySql = mySql;
         theView = mView;
+        this.model = model;
         // Listener
         theView.addPrevListener(new PrevListener());
         theView.addNextListener(new NextListener());
@@ -43,6 +47,7 @@ public class Control{
         theView.setMovieName(mySql.array.get(index).getName());
         theView.setMovieActor(mySql.array.get(index).getActor());
         theView.setMovieRating(mySql.array.get(index).getRating());
+        theView.setSelectedFilter(filter);
     }
 
     /**
