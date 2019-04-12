@@ -90,8 +90,9 @@ public class Control{
         @Override
         public void actionPerformed(ActionEvent e) {
             try{
+                //System.out.println("Selectesd");
                 Ticket ticket;
-                ticket = new Ticket();
+                ticket = new Ticket(theView);
 
                 //ticket.setVisible(true);
                 

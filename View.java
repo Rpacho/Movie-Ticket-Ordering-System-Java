@@ -7,7 +7,7 @@ import javax.swing.JPanel;
 
 public class View extends JFrame{
 	//private JFrame frame = new JFrame();
-	private JLabel movieName, movieActor, movieRating, conTitle, conActor, conRating, conFilter, conFilter2, selectedFilter;
+	JLabel movieName, movieActor, movieRating, conTitle, conActor, conRating, conFilter, conFilter2, selectedFilter;
 	private JButton rAll, rKid, rAdult, rSenior, previous, next, select;
 	
 
@@ -122,7 +122,7 @@ public class View extends JFrame{
 		conActor.setBounds(100,200,250,50);
 		panel.add(conActor);
 
-		conRating = new JLabel("<html><b><font color='red'>Rating: </b></font></html>");
+		conRating = new JLabel("<html><b><font color='red'>Rated: </b></font></html>");
 		conRating.setBounds(100,250,250,50);
 		panel.add(conRating);
 
