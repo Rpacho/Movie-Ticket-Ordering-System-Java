@@ -7,7 +7,8 @@ import javax.swing.JPanel;
 
 public class View extends JFrame{
 	//private JFrame frame = new JFrame();
-	JLabel movieName, movieActor, movieRating, conTitle, conActor, conRating, conFilter, conFilter2, selectedFilter;
+	JLabel movieName, movieActor, movieRating, conTitle, conActor, conRating, conFilter, conFilter2, selectedFilter,
+			movieNum, movieTotalnum, divider;
 	private JButton rAll, rKid, rAdult, rSenior, previous, next, select;
 	
 
@@ -133,6 +134,10 @@ public class View extends JFrame{
 		conFilter2 = new JLabel("<html><b>Selected Filter: </html></b>");
 		conFilter2.setBounds(10,50,200,40);
 		panel.add(conFilter2);
+
+		divider = new JLabel();
+		divider.setBounds(80,400,80,35);
+		panel.add(divider);
 
 		//Dynamic text fields
 

@@ -12,9 +12,8 @@ public class Ticket extends javax.swing.JDialog implements ActionListener{
 	private JFrame frame = new JFrame();
     private JButton cancel;
     private View view;
-    private String getName;
-    private String getActor;
-    JLabel movieName, movieActor, mLabelName, mLabelActor;
+    private String getName, getActor, getRated;
+    JLabel movieName, movieActor, movieRated;
     
 	
 
@@ -23,6 +22,7 @@ public class Ticket extends javax.swing.JDialog implements ActionListener{
         //System.out.println("asdasd");     //FORDEBUG
         getName = "<html><h2><font color='red'>"+ view.movieName.getText() +"</html></h2></font>";
         getActor = "<html><h4>Cast by: <font color='blue'>"+ view.movieActor.getText() +"</html></h2></font>";
+        getRated = "<html><h4>Rated by: <font color='blue'>" + view.movieRating.getText() + "</html></h2></font>";
 		createView();
 
 		frame.setSize(500, 500);
@@ -63,6 +63,11 @@ public class Ticket extends javax.swing.JDialog implements ActionListener{
         movieActor = new JLabel(getActor);
         movieActor.setBounds(10,60,300,35);
         panel.add(movieActor);
+
+        movieRated = new JLabel(getRated);
+        movieRated.setBounds(10,90,300,35);
+        panel.add(movieRated);
+
 
 
 

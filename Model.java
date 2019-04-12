@@ -1,8 +1,7 @@
 public class Model{
-    private String kid;
-    private String adult;
-    private String senior;
-    private String all;
+    private String kid, adult, senior, all;
+    private int regPriceKid, regPriceAdult, regPriceSenior;
+
 
     Model(){
         kid = "<html><b><font color='blue'>Kid</b></font></html>";
