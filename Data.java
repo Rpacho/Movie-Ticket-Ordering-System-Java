@@ -25,9 +25,22 @@ public class Data{
     public String getRating(){
         String str = "";
         for(int i = 0; i < rating.length; i++){
-            str = str + rating[i] + " ";
+            if(rating[0].equals("Kid")){
+                str = "G. PG. PG-13.";
+            }else{
+                str = "R. NC17";
+            }
         }
         return str;
+    }
+    public String getKid(){
+        return rating[0];
+    }
+    public String getAdult(){
+        return rating[1];
+    }
+    public String getSenior(){
+        return rating[2];
     }
 
 

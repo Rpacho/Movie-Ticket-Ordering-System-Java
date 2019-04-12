@@ -1,7 +1,9 @@
-import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemListener;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
 
 public class View extends JFrame{
 	//private JFrame frame = new JFrame();
@@ -113,15 +115,15 @@ public class View extends JFrame{
 		//Set Text fields
 		//Static text fields
 		conTitle = new JLabel("<html><b><font color='red'>Movie: </b></font></html>");
-		conTitle.setBounds(100,100,250,50);
+		conTitle.setBounds(100,150,250,50);
 		panel.add(conTitle);
 
 		conActor = new JLabel("<html><b><font color='red'>Main Actor: </b></font></html>");
-		conActor.setBounds(100,150,250,50);
+		conActor.setBounds(100,200,250,50);
 		panel.add(conActor);
 
 		conRating = new JLabel("<html><b><font color='red'>Rating: </b></font></html>");
-		conRating.setBounds(100,200,250,50);
+		conRating.setBounds(100,250,250,50);
 		panel.add(conRating);
 
 		conFilter = new JLabel("<html><h2>Filter by rating: </html></h2>");
@@ -135,18 +137,19 @@ public class View extends JFrame{
 		//Dynamic text fields
 
 		movieName = new JLabel();
-		movieName.setBounds(300,100,250,50);
+		movieName.setBounds(300,150,250,50);
 		//movieName.setPreferredSize(new Dimension(200,30));
 		panel.add(movieName);
 
 		movieActor = new JLabel();
-		movieActor.setBounds(300,150,250,50);
+		movieActor.setBounds(300,200,250,50);
 		panel.add(movieActor);
 
 		movieRating = new JLabel();
-		movieRating.setBounds(300,200,250,50);
+		movieRating.setBounds(300,250,250,50);
 		panel.add(movieRating);
 
+		//FILTER SELECTED
 		selectedFilter = new JLabel();
 		selectedFilter.setBounds(120,50,200,40);
 		panel.add(selectedFilter);

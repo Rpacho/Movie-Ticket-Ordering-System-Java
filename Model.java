@@ -7,7 +7,7 @@ public class Model{
     Model(){
         kid = "<html><b><font color='blue'>Kid</b></font></html>";
         adult = "<html><b><font color='blue'>Adult</b></font></html>";
-        senior = "<html><b><font color='blue'><Senior/b></font></html>";
+        senior = "<html><b><font color='blue'>Senior</b></font></html>";
         all = "<html><b><font color='blue'>All</b></font></html>";
     }
 
